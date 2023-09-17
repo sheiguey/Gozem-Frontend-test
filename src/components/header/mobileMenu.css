@@ -1,0 +1,41 @@
+.navigation-bar_mobile{
+     height: 100vh;
+     width: 40%;
+     background-color: white;
+     position: fixed;
+     z-index: 20;
+     right: 0em;
+     display: none;
+     padding-top: 2em;
+}
+ 
+
+.navigation-bar_mobile{
+   list-style: none;
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+   padding-inline-start: 0px
+} 
+
+
+.navigation-bar-mobile_item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .navigation-bar_mobile{
+        display:block;
+        gap: 1em;
+        width: 50%;
+    }
+
+}
+
+
+
+
+
