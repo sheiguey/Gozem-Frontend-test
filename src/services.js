@@ -32,7 +32,11 @@ export function pagination({ currentPage, pages, numBadges=6 }){
   
     // In the middle (separator left + right) case
     // ex: [1, null, 26, 27, 28, null, 49]
-    sideBadges.pop();
-    return [1,2,3,null,pages-2,pages-1,pages]
+    sideBadges.pop()
+    const curr = Math.floor(sideBadges.length / 2)
+    const center = sideBadges.map((v, i) => currentPage - curr + i)
+    
+    return [1,2,3,null,...center,null,pages-2,pages-1,pages]
   }
+  
   
